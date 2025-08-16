@@ -1,10 +1,10 @@
-query GetMultipleCharacters {
-  character2: character(id: 2) {
-    id
-    name
-    status
-    species
-    type
-    gender
+query {
+  page2: characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
   }
 }
